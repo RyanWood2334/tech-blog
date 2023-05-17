@@ -1,0 +1,26 @@
+[
+    {
+        "blogpost_title": "Learning how to code",
+        "blogpost_content": "Coding is the language of the digital era, empowering us to create websites, apps, and software solutions. In this blog post, we'll explore the fundamental concepts of coding:",
+        "blogpost_date": "2023-05-14",
+        "UserId": 1
+    },
+    {
+        "blogpost_title": "Efficiency Boost: Essential Coding Tools You Need",
+        "blogpost_content": "To excel in coding, you need the right set of tools. In this blog post, we'll highlight three essential coding tools:",
+        "blogpost_date": "2023-05-14",
+        "UserId": 2
+    },
+    {
+        "blogpost_title": "Mastering Problem-Solving: A Guide for Coders",
+        "blogpost_content": "Problem-solving is at the core of coding. In this blog post, we'll share tips to improve your problem-solving skills:",
+        "blogpost_date": "2023-05-14",
+        "UserId": 3
+    },
+    {
+        "blogpost_title": "Introduction to Coding: Unleashing Your Creativity Through Technology",
+        "blogpost_content": "Coding is the art of creating instructions for computers to follow. In this blog post, we'll explore the world of coding and its endless possibilities:",
+        "blogpost_date": "2023-05-14",
+        "UserId": 4
+    }
+]

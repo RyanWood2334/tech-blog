@@ -16,16 +16,10 @@ Blogpost.init(
     blogpost_contents: {
       type: DataTypes.STRING,
       allowNull: false,
-      // validate: {
-      //   isAlpha: true,
-      // },
     },
     blogpost_date: {
       type: DataTypes.DATE,
       allowNull: false,
-      // validate: {
-      //   isAlpha: true,
-      // },
     },
     //**foreign key: will auto generate
   },

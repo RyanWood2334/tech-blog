@@ -1,0 +1,26 @@
+[
+    {
+        "comment_text": "This is a great blog post!",
+        "comment_date": "2023-05-14",
+        "UserId": 1,
+        "BlogpostId": 1
+    },
+    {
+        "comment_text": "I hated this blog post!",
+        "comment_date": "2023-05-14",
+        "UserId": 3,
+        "BlogpostId": 3
+    },
+    {
+        "comment_text": "I learned alot!",
+        "comment_date": "2023-05-14",
+        "UserId": 2,
+        "BlogpostId": 2
+    },
+    {
+        "comment_text": "I still dont understand this!",
+        "comment_date": "2023-05-14",
+        "UserId": 4,
+        "BlogpostId": 4
+    }
+]
