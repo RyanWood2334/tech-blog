@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS nomad_db;
+DROP DATABASE IF EXISTS techblog_db;
 
-CREATE DATABASE nomad_db;
+CREATE DATABASE techblog_db;
