@@ -1,0 +1,42 @@
+
+<div class="row" id="new-blogpost-form-container" >
+    <div class="col-md-12">
+        <form class="form form-group required col-sm-12 col-lg-6 display-flex flex-row new-project-form bg-light bg-opacity-75 rounded pb-2">
+            <img src="" hidden="hidden" id="ac-img">
+            <label for="project-name" class="control-label" style="color:rgb(73, 73, 73)">Blogpost Title</label>
+            <div class="form-group d-flex justify-content">
+                <input class="form-control form-input bg-light col-lg-9" type="text" id="blogpost-name"
+                       name="blogpost-name" placeholder="What's the name of your blogpost?" required/>
+            </div>
+    
+            <div class="form-group ">
+                <label for="blogpost-contents" class="control-label" style="color:rgb(73, 73, 73)">Enter blogpost contents</label>
+                <textarea class="form-input form-group required bg-ligh col-lg-9 col-md-10" id="blogpost-contents"
+                          name="blogpost-contents"
+                          placeholder="Enter blogpost contents here" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn button-72 text-white">Create blogpost</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="row">
+    {{#each blogpost as |blogpost|}}
+        <div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 >{{blogpost.blogpost_title}}</h5>
+                
+                    <p class="card-text">{{blogpost.blogpost_contents}}</p>
+                    <p class="card-text">{{blogpost.blogpost_date}}</p>
+                    <div>
+                        <button id="blogpost-update-btn" >Update blogpost</button>
+
+                        <button id="blogpost-delete-btn">Delete blogpost</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+</div>
