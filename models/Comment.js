@@ -6,7 +6,7 @@ class Comment extends Model {}
 Comment.init(
   {
     // ** id will auto generate
-    comment_text: {
+    comment: {
       type: DataTypes.STRING,
       allowNull: false,
       // validate: {

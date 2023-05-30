@@ -6,7 +6,7 @@ class Blogpost extends Model {}
 Blogpost.init(
   {
     // ** id will auto generate
-    blogpost_title: {
+    title: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {

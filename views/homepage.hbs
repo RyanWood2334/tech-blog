@@ -1,15 +1,45 @@
-<div class="container">
-<div class="row">
-{{#each users}}
-<div class="col-md-4 col-xl-3">
-    <div class="card" id="nomads-display-card">
-        <h1>{{this.blogpost_title}}</h1>
-        <div class="card-body text-center" style="font-family: Helvetica Neue, sans-serif">
-            <h6>{{this.blogpost_date}}</h6>
+
+
+{{#each allPosts}}
+  <div class="post border" style="margin-bottom: 30px;">
+    <a href='/posts/{{id}}'><h3>{{title}}</h3></a>
+    <p style="font-size: xx-small;">{{this.createdAt}}</p>
+    <p>{{text}}</p>
+    <h4>Comments:</h4>
+    {{#each ../allComments}}
+      {{#isEqual ../id PostId}}
+<p style="position: relative;">
+  {{comment}}
+ 
+
+  <button style="position: absolute; top: 0; right: 0; width: 5%;" data-id={{id}}>x</button>
+          
+
+                
+
+    <div class="modal fade" id="commentModal" tabindex="-1" aria-labelledby="commentModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content bg-dark text-light">
+            <div class="modal-header">
+                <h5 class="modal-title" id="commentModalLabel">Comment</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form class="update-form">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="text-update" class="form-label">Comment</label>
+                        <input type="text" class="form-control" id="commentInput" placeholder="text">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-danger" id="commentBtn" data-bs-target="#updateModal">
+                        Comment
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
-{{/each}}
-</div>
-</div>
-</div>
+
+    <script src="./js/comment.js"></script>
+    <script src="./js/deleteComment.js"></script>

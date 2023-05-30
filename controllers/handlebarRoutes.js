@@ -144,7 +144,7 @@ router.put("/posts/:id", async (req, res) => {
   try {
     // const { notes } = req.body.destination_notes;
     const updatedPost = await Blogpost.update(
-      { text: req.body.text },
+      { blogpost_contents: req.body.blogpost_contents },
       { where: { id: req.params.id } }
     );
     if (!updatedPost) {
