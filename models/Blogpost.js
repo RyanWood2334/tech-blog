@@ -17,10 +17,6 @@ Blogpost.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    blogpost_date: {
-      type: DataTypes.DATE,
-      allowNull: false,
-    },
     //**foreign key: will auto generate
   },
   {

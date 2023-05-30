@@ -13,9 +13,9 @@ Comment.init(
       //   isAlpha: true,
       // },
     },
-    comment_date: {
-      type: DataTypes.DATE,
-      allowNull: false,
+    likes: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
     },
     //**foreign key: will auto generate
   },
