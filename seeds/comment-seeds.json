@@ -1,26 +1,116 @@
 [
-    {
-        "comment_text": "This is a great blog post!",
-        "comment_date": "2023-05-14",
-        "UserId": 1,
-        "BlogpostId": 1
-    },
-    {
-        "comment_text": "I hated this blog post!",
-        "comment_date": "2023-05-14",
-        "UserId": 3,
-        "BlogpostId": 3
-    },
-    {
-        "comment_text": "I learned alot!",
-        "comment_date": "2023-05-14",
-        "UserId": 2,
-        "BlogpostId": 2
-    },
-    {
-        "comment_text": "I still dont understand this!",
-        "comment_date": "2023-05-14",
-        "UserId": 4,
-        "BlogpostId": 4
-    }
+  {
+    "comment_text": "This is a great blog post!",
+    "likes": 14,
+    "UserId": 1,
+    "BlogpostId": 1
+  },
+  {
+    "comment_text": "I hated this blog post!",
+    "likes": 56,
+    "UserId": 3,
+    "BlogpostId": 3
+  },
+  {
+    "comment_text": "I learned alot!",
+    "likes": 4,
+    "UserId": 2,
+    "BlogpostId": 2
+  },
+  {
+    "comment_text": "I still dont understand this!",
+    "likes": 8,
+    "UserId": 4,
+    "BlogpostId": 4
+  },
+  {
+    "comment_text": "Great analysis! I love how you highlighted the evolution of basketball tactics.",
+    "likes": 10,
+    "UserId": 1,
+    "BlogpostId": 1
+  },
+  {
+    "comment_text": "Three-point shooting has definitely changed the game. Good read!",
+    "likes": 7,
+    "UserId": 2,
+    "BlogpostId": 2
+  },
+  {
+    "comment_text": "Dunks are always a crowd pleaser. Amazing display of athleticism!",
+    "likes": 12,
+    "UserId": 3,
+    "BlogpostId": 3
+  },
+  {
+    "comment_text": "Thanks for sharing these training drills. They are really helpful for my practice sessions.",
+    "likes": 15,
+    "UserId": 4,
+    "BlogpostId": 4
+  },
+  {
+    "comment_text": "Teamwork is key! The best teams always know how to work together.",
+    "likes": 8,
+    "UserId": 1,
+    "BlogpostId": 5
+  },
+  {
+    "comment_text": "Great list of the greatest players! Each one has left a significant mark on the game.",
+    "likes": 11,
+    "UserId": 2,
+    "BlogpostId": 6
+  },
+  {
+    "comment_text": "Basketball analytics is fascinating. It's amazing how data can provide valuable insights.",
+    "likes": 9,
+    "UserId": 3,
+    "BlogpostId": 7
+  },
+  {
+    "comment_text": "Conditioning is crucial in basketball. These tips will definitely help in improving endurance.",
+    "likes": 13,
+    "UserId": 4,
+    "BlogpostId": 8
+  },
+  {
+    "comment_text": "Nice post! The tactics have indeed evolved over the years.",
+    "likes": 5,
+    "UserId": 1,
+    "BlogpostId": 1
+  },
+  {
+    "comment_text": "I'm a big fan of three-point shooting. It has changed the dynamics of the game.",
+    "likes": 4,
+    "UserId": 2,
+    "BlogpostId": 2
+  },
+  {
+    "comment_text": "Dunks are jaw-dropping! They bring so much excitement to the game.",
+    "likes": 8,
+    "UserId": 3,
+    "BlogpostId": 3
+  },
+  {
+    "comment_text": "Thanks for sharing these drills. I can't wait to try them out!",
+    "likes": 6,
+    "UserId": 4,
+    "BlogpostId": 4
+  },
+  {
+    "comment_text": "Teamwork makes the dream work. It's amazing what can be achieved when players collaborate.",
+    "likes": 10,
+    "UserId": 1,
+    "BlogpostId": 5
+  },
+  {
+    "comment_text": "I agree with the list! Those players are legends in their own right.",
+    "likes": 7,
+    "UserId": 2,
+    "BlogpostId": 6
+  },
+  {
+    "comment_text": "Data-driven insights have revolutionized basketball strategies. It's incredible!",
+    "likes": 11,
+    "UserId": 3,
+    "BlogpostId": 7
+  }
 ]
