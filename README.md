@@ -4,11 +4,11 @@
 
 ## Description
 
-This Project is a node.js application that is deployed to heroku. This application allows you to see, create, and delete notes that you take. It utilize several different routes, to fetch data, post data, and delete data. Using express and fs tools, it initializes html to render the client side interactions on the web page.
+This is a handlebar fueled tech blog! it utilizes express, sequelize, and handlebars to dynamically render information from the databse. you can get, create, delete, and update posts, and can navigate around the site with varying displays.
 
 ## User Story
 
-As a user, I wanted a way to take notes in class, see previous notes that I stored in a database and delete notes that I no longer need or are redundant etc.
+As a user, I wanted to be able to dynamically render information froma database using handlebars, and be able to input data into a database, and then update and delete that data.
 
 ## Table of Contents
 
@@ -30,18 +30,17 @@ As a user, I wanted a way to take notes in class, see previous notes that I stor
 
 No need to install this application, as it is deployed to a live page at:
 
-https://notetakingapp34.herokuapp.com/
+https://ry-tech-blog.herokuapp.com/
 
 ## Usage
 
 Here are some instructions and examples of use for our project:
 
-This application could be used by any student, employee in training, or anyone needing to take notes and store them for later.
+This application could be utilized by a plethroa of journalism or social media folks!
 
 ## Mock-up
 
-![App image](./assets/11-express-homework-demo-01.png)
-![App image](./assets/11-express-homework-demo-02.png)
+![App image](./assets/tech%20blog%20screenshot.png)
 
 ## License
 
