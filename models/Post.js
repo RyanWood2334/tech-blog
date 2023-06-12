@@ -13,7 +13,7 @@ Post.init(
         len: [0, 20],
       },
     },
-    post_contents: {
+    text: {
       type: DataTypes.STRING,
       allowNull: false,
     },

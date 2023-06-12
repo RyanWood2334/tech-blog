@@ -1,63 +1,63 @@
 [
   {
     "title": "Learning how to code",
-    "post_contents": "Coding is the language of the digital era, empowering us to create websites, apps, and software solutions. In this blog post, we'll explore the fundamental concepts of coding:",
+    "text": "Coding is the language of the digital era, empowering us to create websites, apps, and software solutions. In this blog post, we'll explore the fundamental concepts of coding:",
     "UserId": 1
   },
   {
     "title": "Efficiency Boost: Essential Coding Tools You Need",
-    "post_contents": "To excel in coding, you need the right set of tools. In this blog post, we'll highlight three essential coding tools:",
+    "text": "To excel in coding, you need the right set of tools. In this blog post, we'll highlight three essential coding tools:",
     "UserId": 2
   },
   {
     "title": "Mastering Problem-Solving: A Guide for Coders",
-    "post_contents": "Problem-solving is at the core of coding. In this blog post, we'll share tips to improve your problem-solving skills:",
+    "text": "Problem-solving is at the core of coding. In this blog post, we'll share tips to improve your problem-solving skills:",
     "UserId": 3
   },
   {
     "title": "Introduction to Coding: Unleashing Your Creativity Through Technology",
-    "post_contents": "Coding is the art of creating instructions for computers to follow. In this blog post, we'll explore the world of coding and its endless possibilities:",
+    "text": "Coding is the art of creating instructions for computers to follow. In this blog post, we'll explore the world of coding and its endless possibilities:",
     "UserId": 1
   },
 
   {
     "title": "The Evolution of Basketball Tactics",
-    "post_contents": "In this blog post, we explore the evolution of basketball tactics from its early days to modern strategies. We delve into key changes in offensive and defensive tactics and the impact on the game.",
+    "text": "In this blog post, we explore the evolution of basketball tactics from its early days to modern strategies. We delve into key changes in offensive and defensive tactics and the impact on the game.",
     "UserId": 2
   },
   {
     "title": "The Rise of Three-Point Shooting in Basketball",
-    "post_contents": "This blog post discusses the increasing importance of three-point shooting in basketball. We analyze the rise of the three-point shot, its impact on team strategies, and the players who excel in this aspect of the game.",
+    "text": "This blog post discusses the increasing importance of three-point shooting in basketball. We analyze the rise of the three-point shot, its impact on team strategies, and the players who excel in this aspect of the game.",
     "UserId": 3
   },
   {
     "title": "The Art of Dunking: A Showcase of Athleticism",
-    "post_contents": "In this blog post, we celebrate the art of dunking in basketball. We showcase some of the most memorable dunks in the history of the sport and discuss the impact of this high-flying move on the game.",
+    "text": "In this blog post, we celebrate the art of dunking in basketball. We showcase some of the most memorable dunks in the history of the sport and discuss the impact of this high-flying move on the game.",
     "UserId": 1
   },
   {
     "title": "Basketball Training Drills for Skill Development",
-    "post_contents": "This blog post provides a collection of effective basketball training drills to enhance players' skills. From shooting drills to dribbling exercises, we cover a range of practice routines to help players improve their game.",
+    "text": "This blog post provides a collection of effective basketball training drills to enhance players' skills. From shooting drills to dribbling exercises, we cover a range of practice routines to help players improve their game.",
     "UserId": 2
   },
   {
     "title": "The Importance of Teamwork in Basketball",
-    "post_contents": "In this blog post, we emphasize the significance of teamwork in basketball. We explore how effective teamwork leads to better performance on the court, highlighting examples from successful teams and players.",
+    "text": "In this blog post, we emphasize the significance of teamwork in basketball. We explore how effective teamwork leads to better performance on the court, highlighting examples from successful teams and players.",
     "UserId": 4
   },
   {
     "title": "The Greatest Basketball Players of All Time",
-    "post_contents": "This blog post pays tribute to the greatest basketball players of all time. We discuss their achievements, impact on the game, and why they are regarded as some of the most influential figures in basketball history.",
+    "text": "This blog post pays tribute to the greatest basketball players of all time. We discuss their achievements, impact on the game, and why they are regarded as some of the most influential figures in basketball history.",
     "UserId": 3
   },
   {
     "title": "Analyzing Basketball Analytics: The Role of Data in the Game",
-    "post_contents": "In this blog post, we delve into the world of basketball analytics. We explore how data analysis is used to gain insights into player performance, team strategies, and overall game trends.",
+    "text": "In this blog post, we delve into the world of basketball analytics. We explore how data analysis is used to gain insights into player performance, team strategies, and overall game trends.",
     "UserId": 1
   },
   {
     "title": "Basketball Conditioning: Training for Endurance and Stamina",
-    "post_contents": "This blog post focuses on basketball conditioning and the importance of endurance and stamina. We discuss various conditioning exercises and training techniques to improve players' physical fitness on the court.",
+    "text": "This blog post focuses on basketball conditioning and the importance of endurance and stamina. We discuss various conditioning exercises and training techniques to improve players' physical fitness on the court.",
     "UserId": 2
   }
 ]
