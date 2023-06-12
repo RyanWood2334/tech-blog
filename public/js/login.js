@@ -1,12 +1,13 @@
 const loginFormHandler = async (event) => {
   event.preventDefault();
 
-  //takes in user data from login form
+  // Collect values from the login form
   const username = document.querySelector("#username-login").value.trim();
   const password = document.querySelector("#password-login").value.trim();
+  const logged_in = true;
 
   if (username && password) {
-    //targets the route in userRoutes
+    // Send a POST request to the API endpoint
     const response = await fetch("/api/users/login", {
       method: "POST",
       body: JSON.stringify({ username, password }),
@@ -14,39 +15,16 @@ const loginFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      // If successful, redirect the browser to the dashboard page
-      document.location.replace("/dashboard");
+      // If successful, redirect the browser to the profile page
+      document.location.replace("/profile");
     } else {
-      console.log(response);
-      window.alert("please input username/password");
+      console.log(await response.text());
     }
   }
 };
 
-//handles the form for a new user
-const signupFormHandler = async (event) => {
-  event.preventDefault();
+// Function to handle photo upload
 
-  //takes in user data from signup form
-  const username = document.querySelector("#username-signup").value.trim();
-  const password = document.querySelector("#password-signup").value.trim();
-
-  if (username && password) {
-    //targets the route in userRoutes
-    const response = await fetch("/api/users", {
-      method: "POST",
-      body: JSON.stringify({
-        username,
-        password,
-      }),
-      headers: { "Content-Type": "application/json" },
-    });
-    // If successful, redirect the browser to the dashboard page
-    if (response.ok) {
-      document.location.replace("/dashboard");
-    } else {
-      console.log(response);
-      window.alert("please input username/password");
-    }
-  }
-};
+document
+  .querySelector(".login-form")
+  .addEventListener("submit", loginFormHandler);

@@ -1,42 +1,68 @@
+<h1>HELLO!!!!</h1>
 
-<div class="row" id="new-blogpost-form-container" >
-    <div class="col-md-12">
-        <form class="form form-group required col-sm-12 col-lg-6 display-flex flex-row new-project-form bg-light bg-opacity-75 rounded pb-2">
-            <img src="" hidden="hidden" id="ac-img">
-            <label for="project-name" class="control-label" style="color:rgb(73, 73, 73)">Blogpost Title</label>
-            <div class="form-group d-flex justify-content">
-                <input class="form-control form-input bg-light col-lg-9" type="text" id="blogpost-name"
-                       name="blogpost-name" placeholder="What's the name of your blogpost?" required/>
-            </div>
-    
-            <div class="form-group ">
-                <label for="blogpost-contents" class="control-label" style="color:rgb(73, 73, 73)">Enter blogpost contents</label>
-                <textarea class="form-input form-group required bg-ligh col-lg-9 col-md-10" id="blogpost-contents"
-                          name="blogpost-contents"
-                          placeholder="Enter blogpost contents here" required></textarea>
-            </div>
-            <div class="form-group">
-                <button type="submit" class="btn button-72 text-white">Create blogpost</button>
-            </div>
-        </form>
+<div class="container">
+    <div class="row mb-1">
+        <div class="col-md-12 border">
+                                <h4 class="">{{user.username}}</h4>
+                                <div class="" style="flex-grow: 1;">
+                                    <div>
+                                        <span>MVC Tech Blog</span>
+                                    </div>
+                                {{!-- <button id="new-stamp-btn">New Post</button> --}}
+                                </div>
+                <div class="d-flex align-items-center" id="drty-card-header-textbox">
+                    <div class="row ">
+                        <div class="col-sm-8 flex-column">
+                            <div class="bg-light bg-opacity-75 rounded p-2" style="flex-grow: 1;">
+                            </div>
+                            <div class="col-md-12 display-flex flex-row justify-center">
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
     </div>
 </div>
-<div class="row">
-    {{#each blogpost as |blogpost|}}
-        <div>
-            <div class="card">
-                <div class="card-body">
-                    <h5 >{{blogpost.blogpost_title}}</h5>
-                
-                    <p class="card-text">{{blogpost.blogpost_contents}}</p>
-                    <p class="card-text">{{blogpost.blogpost_date}}</p>
-                    <div>
-                        <button id="blogpost-update-btn" >Update blogpost</button>
 
-                        <button id="blogpost-delete-btn">Delete blogpost</button>
+        <div class="col-md-12 border" style="margin-bottom: 10px;">
+            <div class="">
+                    <h3 class="">{{posts.title}}</h3>
+                    <p style="font-size: xx-small;">{{posts.createdAt}}</p>
+                    <h6>{{posts.text}}</h6>
+                    <div>
+                        {{!-- <img type="button" class="" style="width:2%" data-id={{this.id}} src="/images/trash.png"
+                             alt="">
+                        <img type="button" class="" style="width:2%" data-toggle="modal" data-target="#updateModal" data-post-id={{this.id}} src="/images/pencil.png"> --}}
+                        
+                        <img id="comment"  type="button" style="width:8%" data-toggle="modal" data-target="#commentModal"  src="/images/comment.png" comment-id={{posts.id}} > Post Comment </img>
                     </div>
                 </div>
             </div>
         </div>
-    {{/each}}
+
+         <div class="modal fade" id="commentModal" tabindex="-1" aria-labelledby="commentModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content bg-dark text-light">
+            <div class="modal-header">
+                <h5 class="modal-title" id="commentModalLabel">Comment</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form class="update-form">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="text-update" class="form-label">Comment</label>
+                        <input type="text" class="form-control" id="commentInput" placeholder="text">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-danger" id="commentBtn" data-bs-target="#updateModal">
+                        Comment
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
+
+  <script src="/js/newComment.js"></script>

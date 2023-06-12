@@ -13,7 +13,7 @@ User.hasMany(Comment, {
   onDelete: "Cascade",
 });
 
-Comment.belongsTo(Post, {
+Comment.belongsTo(Blogpost, {
   onDelete: "CASCADE",
 });
 
