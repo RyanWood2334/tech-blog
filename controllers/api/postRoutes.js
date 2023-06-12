@@ -34,6 +34,23 @@ router.get("/", (req, res) => {
     });
 });
 
+// router.get("/", async (req, res) => {
+//   try {
+//     const posts = await Post.findAll({
+//       include: [User, Comment],
+//     });
+
+//     const logged_in = req.session.logged_in || false;
+
+//     console.log(posts)
+
+//     res.render("home", { posts, logged_in });
+//   } catch (err) {
+//     console.log(err);
+//     res.status(500).json(err);
+//   }
+// });
+
 router.get("/:id/", (req, res) => {
   Post.findOne({ where: { id: req.params.id } }).then((data) => {
     res.json(data);

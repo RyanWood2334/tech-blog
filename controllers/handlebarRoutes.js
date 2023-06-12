@@ -145,7 +145,7 @@ router.get("/posts/:id", withAuth, async (req, res) => {
 
     const logged_in = true;
 
-    res.render("user", {
+    res.render("dashboard", {
       posts,
       user,
       comment,
