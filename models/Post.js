@@ -9,15 +9,16 @@ Post.init(
     title: {
       type: DataTypes.STRING,
       allowNull: false,
-      validate: {
-        len: [0, 20],
-      },
+      // validate: {
+      //   isAlpha: true,
+      // },
     },
     text: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
-    //**foreign key: will auto generate
+
+    //**foreign key: dest_id will auto generate
   },
   {
     sequelize,
