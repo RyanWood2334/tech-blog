@@ -1,28 +1,25 @@
+const Post = require("./Post");
 const User = require("./User");
-const Blogpost = require("./Blogpost");
 const Comment = require("./Comment");
 
-Blogpost.belongsTo(User, {
-  onDelete: "Cascade",
-});
-
-User.hasMany(Blogpost, {
-  onDelete: "Cascade",
-});
-User.hasMany(Comment, {
-  onDelete: "Cascade",
-});
-
-Comment.belongsTo(Blogpost, {
+Post.belongsTo(User, {
   onDelete: "CASCADE",
 });
-
-Blogpost.hasMany(Comment, {
-  onDelete: "Cascade",
+User.hasMany(Post, {
+  onDelete: "CASCADE",
+});
+Comment.belongsTo(Post, {
+  onDelete: "CASCADE",
+});
+Post.hasMany(Comment, {
+  onDelete: "CASCADE",
+});
+User.hasMany(Comment, {
+  onDelete: "CASCADE",
 });
 
 module.exports = {
   User: User,
-  Blogpost: Blogpost,
+  Post: Post,
   Comment: Comment,
 };

@@ -11,7 +11,7 @@ class User extends Model {
 User.init(
   {
     // ** id will auto generate
-    user_name: {
+    username: {
       type: DataTypes.STRING,
       allowNull: false,
     },

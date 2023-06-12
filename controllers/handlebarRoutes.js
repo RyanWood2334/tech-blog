@@ -1,6 +1,6 @@
 const router = require("express").Router();
+const { User, Post, Comment } = require("../models");
 const withAuth = require("../utils/auth");
-const { User, Blogpost, Comment } = require("../models");
 
 router.get("/", async (req, res) => {
   try {
@@ -32,14 +32,14 @@ router.get("/", async (req, res) => {
 router.get("/profile", withAuth, async (req, res) => {
   try {
     const dbUserData = await User.findByPk(req.session.user_id, {
-      include: [Blogpost],
+      include: [Post],
     });
     const user = dbUserData.get({ plain: true });
     console.log(user);
-    const blogpost = user.Blogposts;
+    const post = user.Posts;
     logged_in = true;
 
-    console.log(blogpost);
+    console.log(post);
 
     res.render("profile", { user, post, logged_in });
   } catch (err) {
@@ -51,15 +51,15 @@ router.get("/profile", withAuth, async (req, res) => {
 router.get("/profile", withAuth, async (req, res) => {
   try {
     const dbUserData = await User.findByPk(req.session.user_id, {
-      include: [Blogpost],
+      include: [Post],
       // include: [Comment],
     });
     const user = dbUserData.get({ plain: true });
     console.log(user);
-    const blogpost = user.Blogpost;
+    const post = user.Posts;
     logged_in = true;
 
-    console.log(blogpost);
+    console.log(post);
 
     res.render("profile", { user, post, logged_in });
   } catch (err) {
@@ -68,10 +68,31 @@ router.get("/profile", withAuth, async (req, res) => {
   }
 });
 
+// router.get("/home", withAuth, async (req, res) => {
+//   try {
+//     const dbUserData = await User.findByPk(req.session.user_id, {
+//       include: [Post, Comment],
+//     });
+
+//     const user = dbUserData.get({ plain: true });
+//     const post = user.Posts;
+//     const comment = user.Comments;
+//     // console.log(user);
+//     // console.log(post);
+//     // console.log(comment);
+//     const logged_in = true;
+
+//     res.render("home", { user,post,comment, logged_in });
+//   } catch (err) {
+//     console.log(err);
+//     res.status(500).json(err);
+//   }
+// });
+
 router.get("/home", withAuth, async (req, res) => {
   try {
     const dbUserData = await User.findAll({
-      include: [Blogpost, Comment],
+      include: [Post, Comment],
     });
 
     const users = dbUserData.map((dbUser) => dbUser.get({ plain: true }));
@@ -80,12 +101,12 @@ router.get("/home", withAuth, async (req, res) => {
 
     // console.log('==============================');
 
-    const blogposts1 = users[0].Blogposts;
-    const blogposts2 = users[1].Blogposts;
+    const posts1 = users[0].Posts;
+    const posts2 = users[1].Posts;
     const comments = users[0].Comments;
     const comments2 = users[1].Comments;
 
-    const allBlogposts = blogposts1.concat(blogposts2);
+    const allPosts = posts1.concat(posts2);
     const allComments = comments.concat(comments2);
 
     // console.log(allPosts);
@@ -94,16 +115,16 @@ router.get("/home", withAuth, async (req, res) => {
 
     const logged_in = true;
 
-    res.render("home", { users, allBlogposts, allComments, logged_in });
+    res.render("home", { users, allPosts, allComments, logged_in });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
   }
 });
 
-router.get("/blogposts/:id", withAuth, async (req, res) => {
+router.get("/posts/:id", withAuth, async (req, res) => {
   try {
-    const userData = await Blogpost.findByPk(req.params.id, {
+    const userData = await Post.findByPk(req.params.id, {
       include: [
         {
           model: User,
@@ -116,16 +137,16 @@ router.get("/blogposts/:id", withAuth, async (req, res) => {
       return res.status(404).json({ message: "User not found" });
     }
 
-    const blogposts = userData.get({ plain: true });
+    const posts = userData.get({ plain: true });
     const user = posts.User;
     const comment = user.Comments;
 
-    console.log(blogposts);
+    console.log(posts);
 
     const logged_in = true;
 
     res.render("user", {
-      blogposts,
+      posts,
       user,
       comment,
       logged_in,
@@ -143,8 +164,8 @@ router.put("/posts/:id", async (req, res) => {
   }
   try {
     // const { notes } = req.body.destination_notes;
-    const updatedPost = await Blogpost.update(
-      { blogpost_contents: req.body.blogpost_contents },
+    const updatedPost = await Post.update(
+      { text: req.body.text },
       { where: { id: req.params.id } }
     );
     if (!updatedPost) {

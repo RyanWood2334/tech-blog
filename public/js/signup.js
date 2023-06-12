@@ -1,27 +1,25 @@
-//handles the form for a new user
 const signupFormHandler = async (event) => {
   event.preventDefault();
 
-  //takes in user data from signup form
+  // Collect values from the login form
   const username = document.querySelector("#username-signup").value.trim();
   const password = document.querySelector("#password-signup").value.trim();
 
   if (username && password) {
-    //targets the route in userRoutes
+    // Send a POST request to the API endpoint
     const response = await fetch("/api/users", {
       method: "POST",
-      body: JSON.stringify({
-        username,
-        password,
-      }),
+      body: JSON.stringify({ username, password }),
       headers: { "Content-Type": "application/json" },
     });
-    // If successful, redirect the browser to the dashboard page
+
     if (response.ok) {
-      document.location.replace("/dashboard");
+      // If successful, redirect the browser to the profile page
+      document.location.replace("/profile");
     } else {
-      console.log(response);
-      window.alert("please input username/password");
+      console.log(await response.text());
     }
   }
 };
+
+document.querySelector("#sign-up").addEventListener("click", signupFormHandler);

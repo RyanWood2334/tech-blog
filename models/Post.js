@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-class Blogpost extends Model {}
+class Post extends Model {}
 
-Blogpost.init(
+Post.init(
   {
     // ** id will auto generate
     title: {
@@ -13,7 +13,7 @@ Blogpost.init(
         len: [0, 20],
       },
     },
-    blogpost_contents: {
+    post_contents: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -24,4 +24,4 @@ Blogpost.init(
   }
 );
 
-module.exports = Blogpost;
+module.exports = Post;

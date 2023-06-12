@@ -1,0 +1,66 @@
+.profile-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.profile-card h4 {
+  margin-top: 0;
+}
+
+.profile-card button {
+  margin-top: 10px;
+}
+
+/* New post form */
+.new-post-form {
+  display: none;
+  margin-top: 20px;
+}
+
+.new-post-form label {
+  color: #494949;
+}
+
+.new-post-form textarea {
+  height: 100px;
+}
+
+/* Post cards */
+.post-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.post-card h3 {
+  margin-top: 0;
+}
+
+.post-card p {
+  font-size: small;
+}
+
+.post-card img {
+  width: 2%;
+}
+
+/* Update modal */
+.update-modal .modal-content {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.update-modal .modal-title {
+  color: #fff;
+}
+
+.update-modal .form-label {
+  color: #fff;
+}
+
+.update-modal .btn-danger {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
