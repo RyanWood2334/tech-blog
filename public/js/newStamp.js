@@ -6,8 +6,7 @@ const newFormHandler = async (event) => {
   const text = document.querySelector("#project-desc").value.trim();
 
   // Get the uploaded photo URL
-  console.log(title);
-  console.log(text);
+
   if (title && text) {
     const response = await fetch(`/api/posts`, {
       method: "POST",

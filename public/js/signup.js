@@ -22,4 +22,6 @@ const signupFormHandler = async (event) => {
   }
 };
 
+// Function to handle photo upload
+
 document.querySelector("#sign-up").addEventListener("click", signupFormHandler);
